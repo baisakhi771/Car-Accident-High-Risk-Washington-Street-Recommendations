@@ -2,8 +2,22 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+import gdown
+#https://drive.google.com/file/d/1Rd0IE4ODS10hitJi06SVgefRKqY2l3TN/view?usp=drive_link
+
+# Google Drive file ID
+file_id = "1Rd0IE4ODS10hitJi06SVgefRKqY2l3TN"
+url = f"https://drive.google.com/uc?id={file_id}"
+
+# Download the model file
+output = "high_risk_street_model.joblib"
+gdown.download(url, output, quiet=False)
+
+# Load the model
+model = joblib.load(output)
+
 # Load the pre-trained model
-model = joblib.load('high_risk_street_model_with_city.joblib')
+#model = joblib.load('high_risk_street_model_with_city.joblib')
 
 # Load city and weather condition options
 data = pd.read_csv("high_risk_data.csv")  
