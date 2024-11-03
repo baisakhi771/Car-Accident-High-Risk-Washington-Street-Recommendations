@@ -14,10 +14,15 @@ def load_model():
     #file_id="17SYk-DlgJLtla-ZTbKNcfa7OCMW5d2dr" #balanced random forest classifier model
     #file_id = "1Rd0IE4ODS10hitJi06SVgefRKqY2l3TN" # base random forest classifier model
     url = f"https://drive.google.com/uc?id={file_id}"
-
-    # Download the model file
     output = "high_risk_street_model_tuned.joblib"
-    gdown.download(url, output, quiet=False)
+
+    try:
+        gdown.download(url, output, quiet=False)
+    except Exception as e:
+        print(f"Download failed: {e}")
+    # Download the model file
+    #output = "high_risk_street_model_tuned.joblib"
+    # gdown.download(url, output, quiet=False)
 
     # Load and return the model
     return joblib.load(output)
