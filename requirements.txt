@@ -2,3 +2,4 @@ joblib==1.4.2
 streamlit==1.32.1
 pandas==2.0.3
 gdown==5.2.0
+sklearn==1.5.2
