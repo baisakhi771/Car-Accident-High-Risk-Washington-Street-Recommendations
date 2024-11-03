@@ -10,6 +10,7 @@ st.set_page_config(layout="wide")
 @st.cache_resource
 def load_model():
     # Google Drive file ID
+    #https://drive.google.com/file/d/17SYk-DlgJLtla-ZTbKNcfa7OCMW5d2dr/view?usp=sharing
     #file_id="1jdP2oiToh24oa58tIKftH1CiQUmL08sV" # tuned balanced random forest classifier model
     file_id="17SYk-DlgJLtla-ZTbKNcfa7OCMW5d2dr" #balanced random forest classifier model
     #file_id = "1Rd0IE4ODS10hitJi06SVgefRKqY2l3TN" # base random forest classifier model
