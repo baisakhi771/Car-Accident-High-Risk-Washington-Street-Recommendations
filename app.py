@@ -14,7 +14,7 @@ def load_model():
     file_id="17SYk-DlgJLtla-ZTbKNcfa7OCMW5d2dr" #balanced random forest classifier model
     #file_id = "1Rd0IE4ODS10hitJi06SVgefRKqY2l3TN" # base random forest classifier model
     url = f"https://drive.google.com/uc?id={file_id}"
-    output = "high_risk_street_model_tuned.joblib"
+    output = "high_risk_street_brf_model_with_city.joblib"
 
     try:
         gdown.download(url, output, quiet=False)
