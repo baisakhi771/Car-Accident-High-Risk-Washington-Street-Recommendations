@@ -11,7 +11,7 @@ st.set_page_config(layout="wide")
 def load_model():
     # Google Drive file ID
     file_id="1jdP2oiToh24oa58tIKftH1CiQUmL08sV"# tuned balanced random forest classifier model
-    file_id="17SYk-DlgJLtla-ZTbKNcfa7OCMW5d2dr" #balanced random forest classifier model
+    #file_id="17SYk-DlgJLtla-ZTbKNcfa7OCMW5d2dr" #balanced random forest classifier model
     #file_id = "1Rd0IE4ODS10hitJi06SVgefRKqY2l3TN" # base random forest classifier model
     url = f"https://drive.google.com/uc?id={file_id}"
 
